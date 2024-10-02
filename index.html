@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Feedback de Clientes</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(138, 30, 30);
+  }
+
+  .container {
+max-width: 500%;
+margin: auto;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: oblique;
+text-align: center;
+}
+
+.formulario {
+display: flex;
+align-items: center;
+}
+
+.feedback-list {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.feedback-item {
+background-color: white;
+border: 1px solid #ccc;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+align-items: center;
+}
+
+h1{
+color: white;
+font-family: Berlin Sans FB Demi;
+text-align: center;
+}
+
+span{
+color:rgb(33, 12, 33);
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+background-color: rgb(231, 227, 234);
+text-align: center;
+}
+
+
+#feedback-form input[type="text"], 
+#feedback-form textarea {
+display: block;
+width: 50%;
+margin-bottom: 10px;
+align-items: center;
+}
+
+  .star {
+      cursor: pointer;
+      color: grey;
+  }
+  .star.selected, .star:hover, .star:hover~.star {
+      color: yellow;
+  }
+  .hover {
+      color: orange;
+  }
+
+.card-body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    </style>
+</head>
+<body>
+  <div class="card mb-3 border-0">
+    <img src="IMG-20241002-WA0013.jpg" height="550" >
+<div class="card-header bg-danger"> 
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">DEIXE AQUI O SEU FEEDBACK!</h5>
+      <p class="card-text fst-italic">RESTAURANTE PÉ DE CHINESA</p>
+    </div>
+  </div>
+</div>  
+        <div class="mb-3">
+          <p>COMIDA</p>
+          <div class="rating" data-category="1">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <p>ATENDIMENTO</p>
+          <div class="rating" data-category="2">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <p>TAXA DE SERVIÇO</p>
+          <div class="rating" data-category="3">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <p>ENTREGA</p>
+          <div class="rating" data-category="4">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <p>ORGANIZAÇÃO</p>
+          <div class="rating" data-category="5">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+          </div>
+      </div>
+        <form id="feedback-form" class="mb-4">
+            <div class="form-group">
+                <label for="name">SEU NOME</label>
+                <input type="text" id="name" class="form-control" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">SEU COMENTÁRIO</label>
+                <textarea id="comment" class="form-control" placeholder="Seu comentário" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning">ENVIAR FEEDBACK</button>
+        </form>
+        <div class="feedback-list"></div>
+        <h1 class="mt-4 "><span>ESPERAMOS</span> QUE TENHA <span>GOSTADO🍴 </span>!</h1>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
